@@ -13,12 +13,12 @@ Installation
 
 ::
 
-    pip install robotframework-excellibrary
+    pip install robotframework-excellib
 
 Documentation
 -------------
 
-See keyword documentation for robotframework-excellibrary library in
+See keyword documentation for robotframework-excellib library in
 folder ``docs``.
 
 Example
@@ -44,5 +44,5 @@ Apache License 2.0
 
 .. _openpyxl: https://pypi.python.org/pypi/openpyxl
 
-.. |Build Status| image:: https://travis-ci.org/peterservice-rnd/robotframework-excellibrary.svg?branch=master
-   :target: https://travis-ci.org/peterservice-rnd/robotframework-excellibrary
+.. |Build Status| image:: https://travis-ci.org/peterservice-rnd/robotframework-excellib.svg?branch=master
+   :target: https://travis-ci.org/peterservice-rnd/robotframework-excellib

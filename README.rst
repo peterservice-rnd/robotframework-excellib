@@ -6,7 +6,7 @@ Robot Framework Excel Library
 Short Description
 -----------------
 
-`Robot Framework`_ library for working with Excel, based on `openpyxl`_.
+`Robot Framework`_ library for working with Excel documents, based on `openpyxl`_.
 
 Installation
 ------------

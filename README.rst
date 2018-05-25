@@ -19,7 +19,7 @@ Documentation
 -------------
 
 See keyword documentation for robotframework-excellib library in
-folder ``docs``.
+folder ``docs`` on GitHub.
 
 Example
 -------

@@ -1,2 +1,3 @@
-robotframework
-openpyxl
+future>=0.16.0 ; python_version <= '2.7'
+openpyxl>=2.4.1
+robotframework>=3.0.3

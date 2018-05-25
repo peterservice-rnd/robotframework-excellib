@@ -18,12 +18,12 @@ with open(path.join(here, 'requirements.txt')) as f:
 
 setup(
     name='robotframework-excellib',
-    version='1.0.0',
+    version='1.0.1',
     description='Robot Framework library for working with Excel documents',
     long_description=long_description,
     url='https://github.com/peterservice-rnd/robotframework-excellib',
-    author='JSC PETER-SERVICE',
-    author_email='mf_aist_all@billing.ru',
+    author='Nexign',
+    author_email='MF_AIST_all@nexign-systems.com',
     license='Apache License 2.0',
     classifiers=[
         'Development Status :: 5 - Production/Stable',

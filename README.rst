@@ -18,7 +18,7 @@ Installation
 Documentation
 -------------
 
-See keyword documentation for robotframework-excellib library library: docs_.
+See keyword documentation for robotframework-excellib library: docs_.
 
 Example
 -------

@@ -18,8 +18,7 @@ Installation
 Documentation
 -------------
 
-See keyword documentation for robotframework-excellib library in
-folder ``docs`` on GitHub.
+See keyword documentation for robotframework-excellib library: docs_.
 
 Example
 -------
@@ -46,3 +45,5 @@ Apache License 2.0
 
 .. |Build Status| image:: https://travis-ci.org/peterservice-rnd/robotframework-excellib.svg?branch=master
    :target: https://travis-ci.org/peterservice-rnd/robotframework-excellib
+
+.. _docs: https://rawgit.com/peterservice-rnd/robotframework-excellib/master/docs/ExcelLibrary.html

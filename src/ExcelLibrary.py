@@ -180,7 +180,7 @@ class ExcelLibrary(object):
             raise NoOpenedDocumentsException(u"No opened documents in cache.")
         return self._cache[self._current_id]
 
-    def _get_sheet(self, sheet_name=None):
+    def get_sheet(self, sheet_name=None):
         # type: (str)->Worksheet
         """Returns a page from the current document.\n
         *Args:*\n
@@ -211,7 +211,7 @@ class ExcelLibrary(object):
         """
         row_num = int(row_num)
         col_num = int(col_num)
-        sheet = self._get_sheet(sheet_name)
+        sheet = self.get_sheet(sheet_name)
         cell = sheet.cell(row=row_num, column=col_num)  # type: Cell
         return cell.value
 
@@ -236,7 +236,7 @@ class ExcelLibrary(object):
         row_num = int(row_num)
         col_offset = int(col_offset)
         max_num = int(max_num)
-        sheet = self._get_sheet(sheet_name)
+        sheet = self.get_sheet(sheet_name)
         row_iter = sheet.iter_rows(min_row=row_num, max_row=row_num,
                                    column_offset=col_offset,
                                    max_col=max_num)  # type: Iterator[Tuple[Cell]]
@@ -266,7 +266,7 @@ class ExcelLibrary(object):
         col_num = int(col_num)
         row_offset = int(row_offset)
         max_num = int(max_num)
-        sheet = self._get_sheet(sheet_name)
+        sheet = self.get_sheet(sheet_name)
         row_iter = sheet.iter_rows(min_col=col_num, max_col=col_num,
                                    row_offset=row_offset,
                                    max_row=max_num)  # type: Iterator[Tuple[Cell]]
@@ -283,7 +283,7 @@ class ExcelLibrary(object):
         """
         row_num = int(row_num)
         col_num = int(col_num)
-        sheet = self._get_sheet(sheet_name)
+        sheet = self.get_sheet(sheet_name)
         sheet.cell(row=row_num, column=col_num, value=value)
 
     def write_excel_row(self, row_num, row_data, col_offset=0, sheet_name=None):
@@ -297,7 +297,7 @@ class ExcelLibrary(object):
         """
         row_num = int(row_num)
         col_offset = int(col_offset)
-        sheet = self._get_sheet(sheet_name)
+        sheet = self.get_sheet(sheet_name)
         for col_num in range(len(row_data)):
             sheet.cell(row=row_num, column=col_num + col_offset + 1,
                        value=row_data[col_num])
@@ -328,7 +328,7 @@ class ExcelLibrary(object):
         """
         col_num = int(col_num)
         row_offset = int(row_offset)
-        sheet = self._get_sheet(sheet_name)
+        sheet = self.get_sheet(sheet_name)
         for row_num in range(len(col_data)):
             sheet.cell(column=col_num, row=row_num + row_offset + 1,
                        value=col_data[row_num])

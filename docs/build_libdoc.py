@@ -11,4 +11,4 @@ LIB_NAME = 'ExcelLibrary'
 
 if __name__ == '__main__':
     libdoc(join(SRC_DIR, LIB_NAME + '.py'),
-           join(DOCS_DIR, LIB_NAME + '.html'), version='1.0.0')
+           join(DOCS_DIR, LIB_NAME + '.html'), version='1.1.0')

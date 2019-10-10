@@ -18,7 +18,7 @@ with open(path.join(here, 'requirements.txt')) as f:
 
 setup(
     name='robotframework-excellib',
-    version='1.1.0',
+    version='2.0.0',
     description='Robot Framework library for working with Excel documents',
     long_description=long_description,
     url='https://github.com/peterservice-rnd/robotframework-excellib',
@@ -30,8 +30,6 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Testing',
         'License :: OSI Approved :: Apache Software License',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Framework :: Robot Framework :: Library',
